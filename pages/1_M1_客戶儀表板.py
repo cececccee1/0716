@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """M1 · 客戶儀表板"""
 import sys
 import streamlit as st
@@ -14,6 +14,7 @@ st.set_page_config(page_title="M1 客戶儀表板", page_icon="📊", layout="wi
 apply_theme()
 st.title("📊 M1 · 客戶儀表板")
 st.caption("K-means 4 群 · 看誰是誰")
+st.caption("＊本頁的分群方法論，呼應BOSS_I簡報「避開AI盲區：K-means分群除錯實錄」——用標準化與log轉換，避免消費金額(M)量級壓垮頻率(F)維度。")
 
 DATA = Path(__file__).parent.parent / "data"
 
