@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """M2 · 流失預警"""
 import sys
 import streamlit as st
@@ -12,6 +12,7 @@ st.set_page_config(page_title="M2 流失預警", page_icon="🚨", layout="wide"
 apply_theme()
 st.title("🚨 M2 · 流失預警")
 st.caption("D11 決策樹 · Top 10 高風險客戶名單")
+st.caption("＊呼應BOSS_I簡報反直覺發現：決策樹並非過擬合，而是參數設定過嚴導致提早停止學習——真正的問題不是模型太複雜，而是太保守。")
 
 DATA = Path(__file__).parent.parent / "data"
 
