@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """M3 · 銷量預測"""
 import sys
 import streamlit as st
@@ -13,6 +13,7 @@ st.set_page_config(page_title="M3 銷量預測", page_icon="📈", layout="wide"
 apply_theme()
 st.title("📈 M3 · 銷量預測")
 st.caption("D12 Prophet · Top 5 SKU 下月區間預測")
+st.caption("＊呼應BOSS_I簡報發現：遇到雙11這類極端值時，複雜的Prophet模型有時反而不如簡單的Baseline穩健。")
 
 DATA = Path(__file__).parent.parent / "data"
 
