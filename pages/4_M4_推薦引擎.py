@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """M4 · 推薦引擎 ★ 核心展示"""
 import sys
 import streamlit as st
@@ -15,6 +15,7 @@ apply_theme()
 
 st.title("🎯 M4 · 推薦引擎(★ 核心展示)")
 st.caption("D13 Apriori 規則 × D14 K-means 群 → 給對的人推對的品")
+st.caption("＊此頁串接的客群分類，呼應BOSS_I簡報「避開AI盲區：K-means分群除錯實錄」的核心精神——模型看起來在跑，不代表邏輯沒洞。")
 
 DATA = Path(__file__).parent.parent / "data"
 
