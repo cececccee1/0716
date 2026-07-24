@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """M5 · 一頁建議書(給 CMO)"""
 import sys
 import streamlit as st
@@ -12,6 +12,7 @@ st.set_page_config(page_title="M5 一頁建議書", page_icon="📝", layout="wi
 apply_theme()
 st.title("📝 M5 · 一頁建議書")
 st.caption("給 CMO 的單頁總結 · SCQA + 金字塔結構(承 D9)")
+st.caption("＊本頁把技術結果轉換成CMO看得懂的營收數字，呼應BOSS_I簡報核心主張：用AI改變物流具體環節，並讓別人聽懂這值多少錢。")
 
 DATA = Path(__file__).parent.parent / "data"
 
@@ -131,12 +132,10 @@ st.download_button(
 - 樂觀: +180 萬
 - 悲觀: +50 萬
 - 不作為: -80 萬
-
-Allen老師(AIBILA團隊) · 智慧物流班 · BOSS III · 2026
 """.encode("utf-8-sig"),
     "11月精準行銷建議書.md",
     "text/markdown",
 )
 
 st.divider()
-st.caption("Allen老師(AIBILA團隊) · 智慧物流班 · W3 BOSS III · 2026 (本頁可截圖直接貼 Slack 或印出)")
+st.caption("本頁可截圖直接貼 Slack 或印出")
